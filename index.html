@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,26 +17,34 @@
   <body>
     <div class="container-fluid">
       <div class="row w-100% p-1">
-        <h1 class="bg-primary bg-gradient text-white text-center">
-          The Weather
-        </h1>
+        <h1 class="text-white text-center header">The Weather</h1>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-3">
           <h2>Search For A City:</h2>
           <input id="search-input" type="search" placeholder="Las Vegas" />
           <button id="forcast-search-button" type="submit">Search</button>
           <div id="recent-city"></div>
         </div>
-        <div class="col">
+        <div class="col-9">
           <div class="row">
-            <h2>SAMPLE TEXT</h2>
+            <div
+              id="general-city-weather-info"
+              class="general-city-weather-info-container"
+            ></div>
           </div>
-          <div class="row"></div>
+          <div class="row">
+            <div id="forcast" class="forcast-container"></div>
+          </div>
         </div>
       </div>
     </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/javascript.js"></script>
   </body>
 </html>
