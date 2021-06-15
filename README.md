@@ -17,7 +17,7 @@ This is an app that lets you check the weather of any city in the world!
 
 ## Installation
 
-Just click the link [Here!](https://westenskowtristan.github.io/Weather-Api/){:target="\_blank"} After you go to that link in the search bar look up any city you want!
+Just click the link <a href="https://westenskowtristan.github.io/Weather-Api/" target="_blank">Here!</a> After you go to that link in the search bar look up any city you want!
 
 ## Usage
 
