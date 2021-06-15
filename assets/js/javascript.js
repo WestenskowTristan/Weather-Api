@@ -38,7 +38,7 @@ const searchForLocation = async (cityName) => {
 
 const renderGeneralCityInfo = (forcastData, oneCallData) => {
   const { city } = forcastData;
-  const { temp, wind_speed, humidity, uvi, weather } = oneCallData.current;
+  const { temp, wind_speed, humidity, uvi } = oneCallData.current;
 
   const date = new Date();
   const dateDay = date.getDate();
@@ -75,7 +75,6 @@ const renderGeneralCityInfo = (forcastData, oneCallData) => {
 };
 
 const renderFiveDayForcast = (oneCallData) => {
-  console.log(oneCallData);
   const { daily } = oneCallData;
 
   const renderedForcastData = daily.map((item, i) => {
